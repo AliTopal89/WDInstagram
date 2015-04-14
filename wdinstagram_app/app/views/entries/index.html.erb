@@ -1,0 +1,12 @@
+<h1>Instagram of Annoying People</h1>
+
+<ul>
+<% @entries.each do |entry| %>
+<li>Author : <a href="/entries/<%= entry.id%>"><%= entry.author%></a>
+	
+</li>
+
+<% end %>
+</ul>
+
+<a href = "entries/new">Add an Author</a>

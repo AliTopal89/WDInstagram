@@ -1,0 +1,12 @@
+<form method="post" action="/entries">
+	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+	<label for="author">Author:</label>
+	<input type= "text" name="entry[author]" placeholder = "Enter the authors name">
+	<label for="url">URL:</label>
+	<input type="text" name="entry[url]" placeholder = "What's the URL">
+	<label for="created_at">Datetime:</label>
+	<input type="text" name="entry[created_at]" placeholder ="Date and time" >
+	<button type="submit">Save !!</button>
+
+</form>
+

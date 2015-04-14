@@ -1,0 +1,9 @@
+<h2><%= @entry.author%></h2>
+<a href="<%= @entry.url%>">Rich kids of Insta</a>
+
+<a href= "/entries/<%= @entry.id%>/edit">Update the author</a>
+
+<%= form_tag entry_path(@entry), method: "delete" do %>
+	<%= submit_tag("destroy") %>
+<% end %>
+
